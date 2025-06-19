@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Siyabonga Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Siyabonga Blose
+          <div class="contact_info">
+          <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          siyathelegacy26@gmail.com
+        </div>
+        <div class="contact_info">
+        <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +27646921373
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topmenu" href="#Recommendations">Recommendation</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/h42r_6u8u_220303.jpg" class="profile_image" width="60px" alt = "profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Siyabonga Blose! <img src = "html_finalprojimages/waving-hand.png" width="60px" alt="" >
+          </h1>
+          <p>
+            I am a Fullstack beginer programmer with just few weeks experience.
+            I have been tasked to design a database for Soccer Team by the lecture where i have been designing a conseptual,
+            and physical designes for the database.
+            I have also been tasked to develop a milky way application using Java programing language.
+            I have aslo aquaired another skills in html,CSS3 and javascript.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="Skills" class="container">
+      <h2>Skills</h2>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/HTML5_logo_and_wordmark.svg.png" alt = "Skill"/>
+          <h6>HTML</h6>
+          <p>1 week experience</p>
+        </div>  
+
+        <div class="skill" >
+          <img src="html_finalprojimages/JavaScript-Logo-500x281.png" alt = "Skill"/>
+          <h6>JavaScript</h6>
+          <p>1 week experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/css-logo.png" alt = "CSS logo"/>
+            <h6>CSS</h6>
+            <p>1 week experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/png-transparent-java-logo-java-runtime-environment-computer-icons-java-platform-standard-edition-java-miscellaneous-text-logo-thumbnail.png" alt="java logo"/>
+            <h6>Java</h6>
+            <p>4 months experience</p>
+        </div>  
+  
+        <div class="skill">
+            <img src="html_finalprojimages/ISO_C++_Logo.svg.png" alt="C++ logo" />
+            <h6>C++</h6>
+            <p>1 year experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/microsoft-sql-server-logo.png" alt = "SQL logo"/>
+            <h6>SQL</h6>
+            <p>4 month experience</p>
+        </div> 
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="Projects" class="container">
+        <div class="projects-header">
+            <h2>Projects</h2>
+        </div>
+        
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+            <h3>Hygene Community</h3>
+            <ul>
+                <li>Developed a secure website integrated with an ability to upload pictures and locations for places to be cleaned using HTML, CSS and JavaScript</li>
+            </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+            <h3>SolarSystem Animation</h3>
+            <ul>
+                <li>Developed a SolarSystem for animation using JavaFX Frameworks</li>
+            </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+            <h3>Soccer Team Management</h3>
+            <ul>
+                <li>Created a database to keep track of every team on every competion with its players using SQL sever</li>
+            </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Recommendations -->
+    <section id="Recommendations" class="container">
+        <div class="recommendations-header">
+            <h2>Recommendations</h2>
+        </div>
+        <div class="all_recommendations" id="all_recommendations">
+            <div class="recommendation">
+            <span>&#8220;</span>
+            Siyabonga builds smooth, responsive web interfaces using HTML, CSS, and JavaScript.
+            His ability to blend design and function creates elegant user experiences that are both accessible and engaging.
+            <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+            <span>&#8220;</span>
+            With strong foundations in Java and C++, Siyabonga excels at writing efficient, readable code.
+            His structured thinking and problem-solving skills shine in both academic projects and practical applications.
+            <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+            <span>&#8220;</span>
+            Siyabonga works confidently with SQL to manage data and design logical, efficient queries.
+            His understanding of database systems complements his frontend skills, making them a well-rounded developer.
+            <span>&#8221;</span>
+            </div>
+        </div>
+    </section>
+    <!-- Recommendation Form -->
+    <section id="contact" class="container">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/tick-circle.svg" alt="Final Project"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
